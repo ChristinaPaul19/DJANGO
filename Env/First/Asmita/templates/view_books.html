@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>View Books</h1>
+    <ul>
+        <table border="1">
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Message</th>
+            </tr>
+        {% for book in Books %}
+            <tr>
+                <td>{{ book.name }}</td>
+                <td>{{ book.email }}</td>
+                <td>{{ book.message }}</td>
+            </tr>
+        {% endfor %}
+    </ul>
+</body>
+</html>
